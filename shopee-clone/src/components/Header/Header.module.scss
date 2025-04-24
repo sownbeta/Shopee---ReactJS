@@ -1,12 +1,130 @@
-@import '../../styles/variables';
+.header-container {
+  background-color: #ee4d2d; 
 
-.header {
-  background-color: $primary-color;
-  color: white;
-  padding: $space-medium 0;
-  
-  &__title {
-    font-size: 24px;
-    font-weight: bold;
+  .top-bar {
+    background: linear-gradient(to right, #ee4d2d, #ff7337); 
+    padding: 5px 0;
+
+    .top-bar-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+
+      .nav-link {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color: #ffd700; 
+        }
+      }
+
+      .separator {
+        color: white;
+        margin: 0 8px;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 10px;
+        margin: 0 15px;
+
+        a {
+          color: white;
+          font-size: 16px;
+          &:hover {
+            color: #ffd700;
+          }
+        }
+      }
+    }
+  }
+
+  .main-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    gap: 20px;
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+
+      .logo-icon {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        color: #ee4d2d;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        margin-right: 5px;
+      }
+    }
+
+    .search-bar {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      border-radius: 2px;
+
+      .search-input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        font-size: 14px;
+        outline: none;
+        border-radius: 2px 0 0 2px;
+      }
+
+      .search-button {
+        background-color: #fb5533;
+        border: none;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+        border-radius: 0 2px 2px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .cart-icon {
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+      &:hover {
+        color: #ffd700;
+      }
+    }
+  }
+
+  .bottom-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px 0;
+    font-size: 12px;
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: #ffd700;
+      }
+    }
+
+    .separator {
+      color: white;
+      margin: 0 8px;
+    }
   }
 }

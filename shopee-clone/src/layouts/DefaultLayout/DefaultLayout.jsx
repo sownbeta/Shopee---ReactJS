@@ -1,13 +1,15 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
+import Slider from '../../components/Slider/Slider';
+
 
 const DefaultLayout = ({ children }) => {
   return (
     <div className="default-layout">
       <Header />
-      <main>{children}</main>
-      <Footer />
+      <Slider />
+      {/* <main>{children}</main> */}
+      {/* <Footer /> */}
     </div>
   );
 };
